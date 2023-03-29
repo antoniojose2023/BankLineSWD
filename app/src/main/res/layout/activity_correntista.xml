@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.correntista.CorrentistaActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label_text_orientacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insira abaixo seu id do correntista para que possa ser encaminado para a próxima tela, onde será listados todas as suas movimentações"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_margin="16dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Id do correntista"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Enviar"/>
+
+
+</LinearLayout>
